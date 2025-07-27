@@ -52,3 +52,7 @@ header h2 {
     max-height: 500px; /* Adjust as needed */
     padding: 20px;
 }
+img{
+    max-width: 75%;
+    height: auto;
+}
