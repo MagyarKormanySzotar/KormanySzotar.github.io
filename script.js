@@ -17,6 +17,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    var infoTrigger = document.getElementById('info-trigger');
+    var infoPopup = document.getElementById('info-popup');
+    var infoCloseButton = document.getElementsByClassName('info-close-button')[0];
+
+    infoTrigger.onclick = function() {
+        infoPopup.style.display = 'block';
+    }
+
+    infoCloseButton.onclick = function() {
+        infoPopup.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == infoPopup) {
+            infoPopup.style.display = 'none';
+        }
+    }
+
 
     const wordBoxes = document.querySelectorAll('.word-box');
 
